@@ -61,14 +61,14 @@ rake install
 
 ## Usage
 
-psp 
-    authorize
-    neworder
-    paymentsmethods
-    paymentsmethodscopy
-    payouts
+psp
+* authorize
+* neworder
+* paymentsmethods
+* paymentsmethodscopy
+* payouts
 
-TODO: Executable 'psp' not added to the project. Implementation pending
+TODO: Executable 'psp' not added to the project. Implementation pending...
 
 ## Contributing
 
