@@ -1,17 +1,17 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "payu/ruby/simple/payment/use/case/version"
+require "payu_payment/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "payu-ruby-simple-payment-use-case"
-  spec.version       = Payu::Ruby::Simple::Payment::Use::Case::VERSION
+  spec.name          = "payu-payment"
+  spec.version       = PayuPayment::VERSION
   spec.authors       = ["Marcin Nowakowski"]
   spec.email         = ["game.of.no@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{PayU payment CLI}
+  spec.description   = %q{Command line client performing PayU operations over REST API.}
+  spec.homepage      = "https://github.com/marcinnowakowski/payu-ruby-simple-payment-use-case"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
@@ -27,8 +27,7 @@ Gem::Specification.new do |spec|
   spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
-  spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.executables   = ["pp"]
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.16"

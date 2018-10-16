@@ -39,8 +39,6 @@ Finally gem is succesfully created.
 
 By default package structure is different then structure we want some parts have to be refactored. Check git history to see what changes have been made.
 
-TODO: Refactoring still pending.
-
 ## Branching strategy
 
 As branching strategy we use git flow. See reference here:
@@ -61,14 +59,12 @@ rake install
 
 ## Usage
 
-psp
+pp <command>
 * authorize
 * neworder
 * paymentsmethods
 * paymentsmethodscopy
 * payouts
-
-TODO: Executable 'psp' not added to the project. Implementation pending...
 
 ## Contributing
 
